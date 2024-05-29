@@ -5,7 +5,7 @@
 ### ポートフォリオ・マネジメント
 
 - VaR
-    - 正規分布に従うと仮定したら $VaR = V(\mu T - \alpha \sigma \sqrt{T})$
+    - 正規分布に従うと仮定したら $VaR = \mu T - \alpha \sigma \sqrt{T}$
     - 分散は時間T倍になるので標準偏差はその平方根倍になるのがポイント
         - 時間に対して掛け算ではなく微小区間の足し算と捉えるため分散の加法性を利用する
 
@@ -41,7 +41,7 @@ $$
 E(R_P)-r_f=\frac{E(R_M)-r_f}{\sigma_M}\sigma_P
 $$
 
-ポートフォリオに含まれる個別銘柄iの限界寄与は$\frac{Cov(R_i,R_M)}{\sigma_M}$なので，銘柄iのリスクプレミアムは
+ポートフォリオに含まれる個別銘柄iの限界寄与は $\frac{Cov(R_i,R_M)}{\sigma_M}$ なので，銘柄iのリスクプレミアムは
 
 $$
 E(R_P)-r_f=\frac{E(R_M)-r_f}{\sigma_M}\frac{Cov(R_i,R_M)}{\sigma_M}
